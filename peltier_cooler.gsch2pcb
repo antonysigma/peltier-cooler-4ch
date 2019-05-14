@@ -1,0 +1,3 @@
+schematics peltier_cooler.sch
+elements-dir footprint
+output-name peltier_cooler
