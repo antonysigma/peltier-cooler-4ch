@@ -543,7 +543,7 @@ C 42100 46900 1 0 0 adafruit_oled.sym
 T 44600 49300 5 10 0 0 0 0 1
 footprint=JUMPER8
 T 43500 47900 5 10 1 1 0 3 1
-refdes=U3
+refdes=OLED
 }
 C 40700 48300 1 0 0 input-2.sym
 {
