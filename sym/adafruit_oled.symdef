@@ -1,0 +1,16 @@
+# Adafruit Monochrome OLEC breakouts
+
+[labels]
+
+OLED_128x64
+refdes=U?
+! footprint=JUMPER8
+! net=Vdd:7
+! net=Vss:8
+
+[left]
+
+1 SDA
+2 SCL
+
+4 RST
