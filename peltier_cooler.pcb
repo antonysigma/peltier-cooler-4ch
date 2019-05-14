@@ -1476,7 +1476,7 @@ Layer(2 "bottom" "copper")
 	Line[35.6951mm 11.4951mm 1450.00mil 525.00mil 25.00mil 10.00mil "clearline,auto"]
 	Line[1450.00mil 625.00mil 1675.00mil 975.00mil 25.00mil 10.00mil "clearline,auto"]
 	Line[375.00mil 925.00mil 372.00mil 1228.00mil 25.00mil 10.00mil "clearline,auto"]
-	Line[775.00mil 175.00mil 21.9999mm 16.1702mm 25.00mil 10.00mil "found,clearline,auto"]
+	Line[775.00mil 175.00mil 21.9999mm 16.1702mm 25.00mil 10.00mil "clearline,auto"]
 	Line[941.00mil 17.3438mm 1150.00mil 625.00mil 25.00mil 10.00mil "clearline,auto"]
 	Line[1450.00mil 525.00mil 41.4371mm 16.8379mm 25.00mil 10.00mil "clearline,auto"]
 	Line[41.6547mm 16.9399mm 1675.00mil 675.00mil 25.00mil 10.00mil "clearline,auto"]
@@ -1490,7 +1490,7 @@ Layer(2 "bottom" "copper")
 	Line[42.8264mm 33.4928mm 36.5486mm 35.0872mm 10.00mil 10.00mil "clearline,auto"]
 	Line[36.3179mm 35.1731mm 1150.00mil 1525.00mil 10.00mil 10.00mil "clearline,auto"]
 	Line[1875.00mil 175.00mil 1875.00mil 375.00mil 40.00mil 20.00mil ""]
-	Line[1775.00mil 275.00mil 49.4899mm 275.00mil 40.00mil 20.00mil ""]
+	Line[1775.00mil 275.00mil 47.7052mm 275.00mil 40.00mil 20.00mil ""]
 	Line[1150.00mil 925.00mil 1050.00mil 925.00mil 25.00mil 20.00mil "clearline"]
 	Line[1050.00mil 925.00mil 500.00mil 1475.00mil 25.00mil 20.00mil "clearline"]
 	Line[500.00mil 1475.00mil 500.00mil 1600.00mil 25.00mil 20.00mil "clearline"]
@@ -1510,6 +1510,8 @@ Layer(2 "bottom" "copper")
 	Line[1150.00mil 1025.00mil 1250.00mil 1025.00mil 25.00mil 20.00mil "clearline"]
 	Line[1250.00mil 1025.00mil 1450.00mil 1225.00mil 25.00mil 20.00mil "clearline"]
 	Line[175.00mil 550.00mil 175.00mil 1600.00mil 40.00mil 20.00mil ""]
+	Line[2075.00mil 350.00mil 2075.00mil 175.00mil 60.00mil 20.00mil ""]
+	Line[2350.00mil 200.00mil 2500.00mil 200.00mil 60.00mil 20.00mil ""]
 	Arc[1005.00mil 1155.00mil 22.50mil 22.50mil 25.00mil 10.00mil 236.197826 20.829934 "clearline,auto"]
 	Arc[1450.00mil 425.00mil 52.50mil 52.50mil 25.00mil 10.00mil 5.095407 26.572836 "clearline,auto"]
 	Arc[925.00mil 625.00mil 60.00mil 60.00mil 25.00mil 10.00mil 11.168075 94.297935 "clearline,auto"]
@@ -1522,6 +1524,11 @@ Layer(2 "bottom" "copper")
 	Polygon("clearpoly")
 	(
 		[75.00mil 1875.00mil] [1950.00mil 1875.00mil] [1950.00mil 75.00mil] [75.00mil 75.00mil] 
+	)
+	Polygon("clearpoly")
+	(
+		[2000.00mil 400.00mil] [2200.00mil 400.00mil] [2325.00mil 275.00mil] [2550.00mil 275.00mil] [2550.00mil 100.00mil] 
+		[2000.00mil 100.00mil] 
 	)
 )
 Layer(3 "digital" "copper")
