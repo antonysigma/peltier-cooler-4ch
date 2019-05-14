@@ -1200,7 +1200,7 @@ Element["" "TO220W" "Q3" "unknown" 2325.00mil 1375.00mil -100.00mil -200.00mil 0
 
 	)
 
-Element["" "TO220W" "Q2" "unknown" 2325.00mil 1025.00mil -100.00mil -200.00mil 0 100 ""]
+Element["" "TO220W" "Q2" "unknown" 2325.00mil 1050.00mil -100.00mil -200.00mil 0 100 ""]
 (
 	Pin[0.0000 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "G" "1" "square,edge2"]
 	Pin[100.00mil 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "D" "2" "edge2"]
