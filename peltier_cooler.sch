@@ -251,7 +251,7 @@ device=CONNECTOR_3
 T 47800 54300 5 10 1 1 0 0 1
 refdes=CONN1
 T 47800 53200 5 10 0 1 0 0 1
-footprint=JUMPER3
+footprint=kk100_2031
 }
 C 47800 51800 1 0 0 connector3-1.sym
 {
@@ -260,7 +260,7 @@ device=CONNECTOR_3
 T 47800 52900 5 10 1 1 0 0 1
 refdes=CONN2
 T 47800 51800 5 10 0 1 0 0 1
-footprint=JUMPER3
+footprint=kk100_2031
 }
 C 47800 50400 1 0 0 connector3-1.sym
 {
@@ -269,7 +269,7 @@ device=CONNECTOR_3
 T 47800 51500 5 10 1 1 0 0 1
 refdes=CONN3
 T 47800 50400 5 10 0 1 0 0 1
-footprint=JUMPER3
+footprint=kk100_2031
 }
 C 47800 48900 1 0 0 connector3-1.sym
 {
@@ -278,7 +278,7 @@ device=CONNECTOR_3
 T 47800 50000 5 10 1 1 0 0 1
 refdes=CONN4
 T 47800 48900 5 10 0 1 0 0 1
-footprint=JUMPER3
+footprint=kk100_2031
 }
 N 49500 53700 50400 53700 4
 N 50400 53700 50400 49400 4
@@ -394,7 +394,7 @@ device=CONNECTOR_2
 T 58900 50300 5 10 1 1 0 6 1
 refdes=J6
 T 58900 49500 5 10 0 1 0 0 1
-footprint=JUMPER2
+footprint=mkds_1_5_2
 }
 C 57100 48600 1 0 0 gnd-1.sym
 C 55300 49000 1 0 0 input-2.sym
@@ -406,7 +406,6 @@ device=none
 T 55800 49100 5 10 1 1 0 7 1
 value=D6
 }
-C 57000 50000 1 0 0 vcc-1.sym
 C 45000 54500 1 0 0 vdd-1.sym
 C 56700 46900 1 0 0 pmos-3.sym
 {
@@ -424,7 +423,7 @@ device=CONNECTOR_2
 T 58900 48300 5 10 1 1 0 6 1
 refdes=J9
 T 58900 47500 5 10 0 1 0 0 1
-footprint=JUMPER2
+footprint=mkds_1_5_2
 }
 C 57100 46600 1 0 0 gnd-1.sym
 C 55300 47000 1 0 0 input-2.sym
@@ -436,7 +435,6 @@ device=none
 T 55800 47100 5 10 1 1 0 7 1
 value=D9
 }
-C 57000 48000 1 0 0 vcc-1.sym
 C 56700 44900 1 0 0 pmos-3.sym
 {
 T 57300 45400 5 10 0 0 0 0 1
@@ -453,7 +451,7 @@ device=CONNECTOR_2
 T 58900 46300 5 10 1 1 0 6 1
 refdes=J10
 T 58900 45500 5 10 0 1 0 0 1
-footprint=JUMPER2
+footprint=mkds_1_5_2
 }
 C 57100 44600 1 0 0 gnd-1.sym
 C 55300 45000 1 0 0 input-2.sym
@@ -465,7 +463,6 @@ device=none
 T 55800 45100 5 10 1 1 0 7 1
 value=D10
 }
-C 57000 46000 1 0 0 vcc-1.sym
 C 56700 50900 1 0 0 pmos-3.sym
 {
 T 57300 51400 5 10 0 0 0 0 1
@@ -482,7 +479,7 @@ device=CONNECTOR_2
 T 58900 52300 5 10 1 1 0 6 1
 refdes=J5
 T 58900 51500 5 10 0 1 0 0 1
-footprint=JUMPER2
+footprint=mkds_1_5_2
 }
 C 57100 50600 1 0 0 gnd-1.sym
 C 55300 51000 1 0 0 input-2.sym
@@ -494,7 +491,6 @@ device=none
 T 55800 51100 5 10 1 1 0 7 1
 value=D5
 }
-C 57000 52000 1 0 0 vcc-1.sym
 C 46300 45100 1 0 1 output-2.sym
 {
 T 45400 45300 5 10 0 0 0 6 1
@@ -593,9 +589,8 @@ device=CONNECTOR_2
 T 55500 54300 5 10 1 1 0 0 1
 refdes=IN_24V
 T 55500 53500 5 10 0 1 0 0 1
-footprint=JUMPER2
+footprint=mkds_1_5_2
 }
-C 57000 54000 1 0 0 vcc-1.sym
 C 57100 52800 1 0 0 gnd-1.sym
 C 57600 54000 1 270 0 capacitor-2.sym
 {
@@ -655,3 +650,8 @@ T 47200 54800 9 14 1 0 0 0 1
 Thermal sensors
 T 54800 54800 9 14 1 0 0 0 1
 24VDC power output
+C 57000 54000 1 0 0 vee-1.sym
+C 57000 52000 1 0 0 vee-1.sym
+C 57000 50000 1 0 0 vee-1.sym
+C 57000 48000 1 0 0 vee-1.sym
+C 57000 46000 1 0 0 vee-1.sym
