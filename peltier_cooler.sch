@@ -603,7 +603,7 @@ symversion=0.1
 T 57600 54000 5 10 0 0 0 0 1
 value=250u
 T 57600 54000 5 10 0 1 0 0 1
-footprint=CPolar200
+footprint=c_elec_8x10.5
 }
 N 57200 54000 57800 54000 4
 N 57200 53100 57200 53700 4
@@ -619,7 +619,7 @@ symversion=0.1
 T 44400 54500 5 10 0 0 0 0 1
 value=250u
 T 44400 54500 5 10 0 1 0 0 1
-footprint=CPolar200
+footprint=c_elec_8x10.5
 }
 C 44500 53300 1 0 0 gnd-1.sym
 C 42900 44800 1 90 0 resistor-1.sym
