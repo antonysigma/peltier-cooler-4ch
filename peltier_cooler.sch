@@ -406,7 +406,7 @@ device=none
 T 45400 45400 5 10 1 1 0 7 1
 value=ONE_WIRE
 }
-C 56700 48300 1 0 0 pmos-3.sym
+C 56700 48300 1 0 0 nmos-3.sym
 {
 T 57300 48800 5 10 0 0 0 0 1
 device=PMOS_TRANSISTOR
@@ -445,7 +445,7 @@ T 55800 48500 5 10 1 1 0 7 1
 value=D6
 }
 C 45000 54500 1 0 0 vdd-1.sym
-C 56700 45600 1 0 0 pmos-3.sym
+C 56700 45600 1 0 0 nmos-3.sym
 {
 T 57300 46100 5 10 0 0 0 0 1
 device=PMOS_TRANSISTOR
@@ -481,7 +481,7 @@ device=none
 T 55800 45800 5 10 1 1 0 7 1
 value=D9
 }
-C 56700 43000 1 0 0 pmos-3.sym
+C 56700 43000 1 0 0 nmos-3.sym
 {
 T 57300 43500 5 10 0 0 0 0 1
 device=PMOS_TRANSISTOR
@@ -517,7 +517,7 @@ device=none
 T 55800 43200 5 10 1 1 0 7 1
 value=D10
 }
-C 56700 50900 1 0 0 pmos-3.sym
+C 56700 50900 1 0 0 nmos-3.sym
 {
 T 57300 51400 5 10 0 0 0 0 1
 device=PMOS_TRANSISTOR
