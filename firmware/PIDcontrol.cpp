@@ -5,15 +5,6 @@
 const uint16_t systemInputmax = 255;
 const uint16_t systemInputdefault = 0;
 
-// Slew rate limiter: limit changes to 50um / 5ms = 20 count / ms
-//const float slewRatelimit = 20e3f;
-
-//static inline long
-//map4096 (float u, long lowerLimit, long upperLimit)
-//{
-//  return lowerLimit + ((long (u) * (upperLimit - lowerLimit)) >>12);
-//}
-
 PID_control::PID_control(DallasTemperature* _sensors, int _tempChannel, int _peltierPin,
                          int _lockLEDPin, int _fanPin, unsigned long _sampleTime, float _Kp,
                          float _Ti, float _Td)
@@ -83,14 +74,7 @@ PID_control::update (unsigned long currentMillis)
   // Indicate lock status when temperature is within +/- 1.0C
   const bool lock_flag = (new_e <= 1 && new_e >= -1);
 
-  // Slew rate limiter
-  //if (new_e > eMax) 
-  //  new_e = eMax;
-  //else if (new_e < -eMax)
-  //  new_e = -eMax;
-
   // Apply PI gain
-  //static float new_u = u;
   auto& new_u = u;
 
   new_u += Kp * (new_e - e);
@@ -118,13 +102,7 @@ PID_control::update (unsigned long currentMillis)
   else if (new_u > 30)
       analogWrite (fanPin, 64);
 
-  // Apply another slew rate limiter
-  //u = 0.97 * u + 0.03 * new_u;
-
-  // Apply system input, only when there is a significant change
-  // Used to reduce i2c traffic
-  //if (u - new_u > 1 || u - new_u < -1)
-  //  analogWrite (peltierPin, new_u);
+  // Apply system input.
   analogWrite (peltierPin, int(new_u));
 
   // Update state variables
@@ -134,6 +112,7 @@ PID_control::update (unsigned long currentMillis)
 
   // Show lock signal
   // Debounce switch: change state only after 5 seconds
+  // TODO(Antony): decouple PID state change (aka the event) from the system response.
   if (lock_flag && lockTimer > 5000)
     digitalWrite (lockLED, HIGH);
   else if (!lock_flag)
