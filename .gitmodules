@@ -1,0 +1,21 @@
+[submodule "OneWire"]
+	path = firmware/libraries/OneWire
+	url = https://github.com/PaulStoffregen/OneWire.git
+[submodule "firmware/libraries/Adafruit_SSD1306"]
+	path = firmware/libraries/Adafruit_SSD1306
+	url = https://github.com/adafruit/Adafruit_SSD1306.git
+[submodule "firmware/libraries/Adafruit-GFX-Library"]
+	path = firmware/libraries/Adafruit_GFX
+	url = https://github.com/adafruit/Adafruit-GFX-Library.git
+[submodule "firmware/libraries/Adafruit_BusIO"]
+	path = firmware/libraries/Adafruit_BusIO
+	url = https://github.com/adafruit/Adafruit_BusIO
+[submodule "firmware/libraries/Arduino-Temperature-Control-Library"]
+	path = firmware/libraries/ds18b20
+	url = https://github.com/milesburton/Arduino-Temperature-Control-Library.git
+[submodule "firmware/libraries/OneWire"]
+	path = firmware/libraries/OneWire
+	url = https://github.com/PaulStoffregen/OneWire.git
+[submodule "firmware/libraries/ds18b20"]
+	path = firmware/libraries/ds18b20
+	url = https://github.com/milesburton/Arduino-Temperature-Control-Library.git
