@@ -16,9 +16,19 @@ Display::setup() {
 }
 
 void
+Display::printFloat(const float x) {
+    auto ten_times = static_cast<const unsigned int>(x * 10);
+    const auto fraction = ten_times - (ten_times / 10 * 10);
+
+    handle.print(ten_times / 10);
+    handle.print('.');
+    handle.print(fraction);
+}
+
+void
 Display::print(const unsigned long currentTime, const float tempA, const int controlPWMA,
                const float tempB, const int controlPWMB) {
-    const unsigned long wait = 500;
+    constexpr unsigned long wait = 500;
     static unsigned long previousTime = millis();
     if (currentTime - previousTime < wait) return;
     previousTime = currentTime;
@@ -28,18 +38,18 @@ Display::print(const unsigned long currentTime, const float tempA, const int con
     handle.setTextSize(1);
     handle.setTextColor(WHITE);
     handle.setCursor(0, 0);
-    handle.println("Peltier controller");
+    handle.println(F("Peltier controller"));
 
     // handle.setTextSize (1);
     handle.print("T=  ");
     if (tempA > 0.0f) {
-        handle.print(tempA);
+        printFloat(tempA);
         handle.print("C  ");
     } else
         handle.print("ERR");
 
     if (tempB > 0.0f) {
-        handle.print(tempB);
+        printFloat(tempB);
         handle.println("C");
     } else
         handle.println("ERR");

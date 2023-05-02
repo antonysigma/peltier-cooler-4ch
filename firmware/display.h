@@ -8,6 +8,8 @@
 class Display {
     Adafruit_SSD1306 handle;
 
+    void printFloat(const float);
+
    public:
     Display();
     Display(const Display &) = delete;
