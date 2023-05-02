@@ -1,4 +1,4 @@
-# 4-channel Peltier cooler, 30W
+# 4-channel Peltier cooler, 30W per channel
 
 The custom PCB to control up to 4 individual Peliter coolers
 interfacing the high power laser modules.
@@ -27,11 +27,11 @@ Technical specifications:
 
 ## Why I made my own board
 
-The board is primarily used to dissipate and stabilize the waste heat from the
-[3,000mW laser modules](https://www.ushio.com/product/necsel-green-laser-53x/).
-A large power is required to compensate the coupling loss of the homogenizing
-liquid light quide and the TV lens, so that I can excite the fluorophores on all
-96 wells on the multi-well plate (area: 180mm x 90mm).
+The board is primarily used to dissipate the waste heat from the
+[3,000mW laser modules](https://www.ushio.com/product/necsel-green-laser-53x/). A high laser
+power is required to compensate the coupling loss of the homogenizing liquid
+light-guide and the TV lens, so that I can excite the fluorescence-stained
+mammalian cells on all 96 wells of the multi-well plate (area: 180mm x 90mm).
 
 At the time, there was an urgent need to create an evaluation board at less than
 10% of the cost of the OEM laser parts. So, the OEM provided temperature
@@ -39,11 +39,11 @@ controller evaluation kits were a no go.
 
 ## Preview
 
-![](schematic.png)
+![](preview.jpg)
 
 ## Schematics
 
-![](preview.jpg)
+![](schematic.png)
 
 ## PCB routing
 
@@ -59,3 +59,10 @@ is to draw a "tripod" footprint.
 
 * The effect of pulse width modulation (PWM) frequency on the realiability of thermoelectric modules.
   https://tetech.com/wp-content/uploads/2013/10/ICT99MJN.pdf
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img
+alt="Creative Commons License" style="border-width:0"
+src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work
+is licensed under a <a rel="license"
+href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+Attribution-ShareAlike 4.0 International License</a>.
