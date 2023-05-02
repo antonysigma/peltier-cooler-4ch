@@ -12,9 +12,15 @@ ARDUINO_LIBS = \
 	Adafruit_SSD1306 \
 	Adafruit_GFX \
 	Adafruit_BusIO
+
 BOARD_TAG = uno
 MONITOR_PORT=/dev/ttyUSB0
 OPTIMIZATION_LEVEL=3
-CXXFLAGS_STD = -std=c++14 -fno-threadsafe-statics -flto
+CXXFLAGS_STD = -std=c++14 \
+	-fno-threadsafe-statics \
+	-flto \
+	-fno-rtti \
+	-fno-exceptions \
+	-fno-permissive
 
 include /usr/share/arduino/Arduino.mk
